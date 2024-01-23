@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://accct.cn/rtmjs78 -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>💕</title>
+    <script src="./new_files/hm.js"></script><script>
+        //判断客户端设备，选择写入meta
+        function init_viewport() {
+            if (navigator.userAgent.indexOf("Android") != -1) {
+                var version = parseFloat(RegExp.$1);
+                if (version > 2.3) {
+                  var width =
+                    window.outerWidth == 0 ? window.screen.width : window.outerWidth;
+                  var phoneScale = parseInt(width) / 500;
+                  document.write(
+                    '<meta name="viewport" content="width=500, minimum-scale = ' + phoneScale + ", maximum-scale = " + phoneScale + ', target-densitydpi=device-dpi">'
+                  );
+                } else {
+                  document.write(
+                    '<meta name="viewport" content="width=500, target-densitydpi=device-dpi, user-scalable=0">'
+                  );
+                }
+            } else if (navigator.userAgent.indexOf("iPhone") != -1) {
+                var phoneScale = parseInt(window.screen.width) / 500;
+                document.write(
+                  '<meta name="viewport" content="width=500, min-height=750, initial-scale=' + phoneScale + ", maximum-scale=" + phoneScale + ', user-scalable=0" /> '
+                ); //0.75   0.82
+                } else {
+                document.write(
+                  '<meta name="viewport" content="width=500, height=750, initial-scale=0.64" /> '
+                ); //0.75  0.82
+            }
+        }
+        init_viewport();
+    </script><meta name="viewport" content="width=500, height=750, initial-scale=0.64"> 
+    <meta name="viewport" content="width=500, target-densitydpi=device-dpi, user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="./new_files/style.css">
+    <link type="text/css" rel="stylesheet" href="./new_files/style(1).css">
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+<div id="div_container">
+    <div id="div_start_bg" style="height: 962px; background-size: 100%; background-image: url(&quot;https://web2.20it.cn/static/images/back/63ec85974e64849fbb6b352603cc5394.jpg&quot;); opacity: 0.8;"></div>
+    <div id="div_hearttree" style="height:100vh;display: block;">
+        <div id="div_tree_error">
+            很可惜你的手机浏览器不支持，错过了惊喜效果哦
+        </div>
+        <div id="div_tree_start"></div>
+        <div id="div_tree_main">
+            <div id="div_tree_text" style="margin-top:50px;">
+                <span id="span_tree_typed" style="font-size:1.3rem;"></span>
+            </div>
+            <canvas id="canvas_tree" width="500" height="815"></canvas>
+            <div id="div_tree_timer">
+                <span id="span_tree_desc">一起打游戏吗？
+<br>我带飞。
+<br>如果你不愿意，
+<br>那我也不打游戏了，
+<br>我打你~~~
+<br></span>
+                <div id="div_tree_interval"></div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<audio id="audio_music" data-id="audio_music" autoplay="autoplay" preload="auto" loop="">
+    <source src="https://sf6-cdn-tos.douyinstatic.com/obj/ies-music/1636042215362563.mp3" type="audio/mpeg">
+    <embed hidden="true" autostart="true" height="0" width="0" loop="true" src="https://sf6-cdn-tos.douyinstatic.com/obj/ies-music/1636042215362563.mp3" autoplay="autoplay">
+</audio>
+
+<script src="./new_files/jquery.min.js"></script>
+
+<script type="text/javascript">
+    var id = "1837307";
+    var data_type = "1";
+    var vip_type = "0";
+    var temp_id = "14";
+    var views = "1";
+</script>
+
+<script src="./new_files/main.js"></script>
+<script src="./new_files/typed.min.js"></script>
+<script src="./new_files/jscex.min.js"></script>
+<script src="./new_files/jscex-parser.js"></script>
+<script src="./new_files/jscex-jit.js"></script>
+<script src="./new_files/jscex-other.js"></script>
+
+
+<script>
+    
+    var start_content = {
+        "hearttree_desc": "",//副标题
+    };
+    
+    var tempRes={data:start_content};
+
+    var start_id;
+    $(function () {
+        //此事件为触发互动创意
+        $('#div_hearttree').show();
+        init_hearttree();
+        
+    });
+
+    start_content.hearttree_text = $("#span_tree_desc").text();//tempRes.data.hearttree_text;
+    console.log("start_content.hearttree_text",start_content.hearttree_text);
+</script>
+
+<!-- 按需加载，选择此片头时方才加载 -->
+<script src="./new_files/start_hearttree.js"></script>
+
+
+
+<script>
+if ((typeof (data_type) != "undefined" && data_type == 0) || (typeof (vip_type) != "undefined" && vip_type != null && vip_type == 0)) {
+	var ua = navigator.userAgent.toLowerCase(); 
+	if (ua.match(/MicroMessenger/i) == "micromessenger" && ua.indexOf("miniprogram") == -1 && document.referrer.indexOf("code") == -1 && document.referrer.indexOf("new") == -1 && document.referrer.indexOf("game") == -1) { 
+		document.writeln("<script src=\"https://ai8.top/api/getJumpJs\"><\/script>");  
+	}
+}
+
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	if(location.toString().indexOf("55.cn")>-1 || location.toString().indexOf("77.cn")>-1 || location.toString().indexOf("ai8")>-1){
+		hm.src = "https://hm.baidu.com/hm.js?51d6321aaa4909493b4e8941b57c30d7";//OT统计
+	}else{
+		hm.src = "https://hm.baidu.com/hm.js?9268d9128fcebf1a5da96d7cb2a8dac4";//CN统计
+	}
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body></html>
